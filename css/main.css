@@ -1611,6 +1611,7 @@ canvas,embed,iframe,img,object,svg,video {
 }
 
 .fw-700 {
+    font-family: var(--font-secondary);
     font-weight: 700
 }
 
