@@ -244,7 +244,7 @@
         ),
         !function _() {
             $ && clearTimeout($);
-            let t = "https://free.radioapi.lat/get_stream_title/?url=" + encodeURIComponent(l.stream_url);
+            let t = "https://twj.es/get_stream_title/?url=" + encodeURIComponent(l.stream_url);
             fetch(t).then(_=>_.json()).then(async _=>{
                 let $ = _.song;
                 if (e !== $) {
