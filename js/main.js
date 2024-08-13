@@ -76,8 +76,10 @@
         }
         let u = C.results
           , L = {
-            title: u.title || $,
-            artist: u.artist || _,
+            //title: u.title || $,
+            //artist: u.artist || _,
+            title: $,
+            artist: _,
             thumbnail: u.artwork.small || t,
             art: u.artwork.medium || t,
             cover: u.artwork.large || r,
@@ -110,8 +112,10 @@
             };
         let n = i.results[0]
           , C = {
-            title: n.trackName || $,
-            artist: n.artistName || _,
+            //title: n.trackName || $,
+            //artist: n.artistName || _,
+            title: $,
+            artist: _,
             thumbnail: n.artworkUrl100 || t,
             art: n.artworkUrl100 ? l(n.artworkUrl100, "600x600") : t,
             cover: n.artworkUrl100 ? l(n.artworkUrl100, "1000x1000") : r
