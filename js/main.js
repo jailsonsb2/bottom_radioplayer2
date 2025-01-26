@@ -51,7 +51,7 @@
         let a = s.toLowerCase();
         if (e[a])
             return e[a];
-        let o = `https://api-v2.streamafrica.net/musicsearch?query=${encodeURIComponent(s)}&service=${l.toLowerCase()}`
+        let o = `https://free.radioapi.lat/history?query=${encodeURIComponent(s)}&service=${l.toLowerCase()}`
           , i = await fetch(o);
         if (403 === i.status) {
             let n = {
